@@ -2,9 +2,14 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 using namespace std;
 
 #include <iostream>
+#include <cstring>
+#include <algorithm>
 
 using namespace std;
 
@@ -18,6 +23,7 @@ bool isPrime(int n){
 }
 
 int main() {
+
     string line;
     int number = 0;
     ifstream myfile ("C:\\Users\\Lucian\\OneDrive\\Desktop\\FIAnul3\\Semestrul2\\OOP labs\\OOPLabs\\Lab1\\in.txt");
@@ -28,29 +34,39 @@ int main() {
         printf("Numbers: %d\n", number);
         myfile.close();
     }
-    char newWords [10][80];
+
+    char newWords[100];
+    char* listOfWords[100];
 
     printf ("Enter a sentence: ");
     scanf ("%[^\n]s",&newWords);
 
     printf("My printed sentence: %s\n", &newWords);
 
+    int num_words = 0;
+    char *words[100];
+    char *word = strtok(newWords, " ");
 
-//    string s;
-//    int i = 0;
-//    char separator = ' ';
-//
-//    while (newWords[i] != '\0') {
-//        if (newWords[i] != separator) {
-//            // Append the char to the temp string.
-//            s += newWords[i];
-//        } else {
-//            cout << s << endl;
-//            s.clear();
-//        }
-//        i++;
-//    }
-//    cout << s << endl;
+    while (word != NULL) {
+        words[num_words] = word;
+        num_words++;
+        word = strtok(NULL, " ");
+
+    }
+
+    for (int i = 0; i < num_words; i++){
+        for(int j = 0; j < num_words - 1; j++) {
+            if (strlen(words[j]) > strlen(words[j + 1])) {
+                swap(words[i], words[j]);
+            }
+        }
+        }
+
+
+    for (int i = 0; i < num_words; i++) {
+        printf("%s\n", words[i]);
+    }
+
 
     int n;
 
