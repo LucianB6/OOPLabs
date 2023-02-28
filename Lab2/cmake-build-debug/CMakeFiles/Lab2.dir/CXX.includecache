@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/NumberList.h
+
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/main.cpp
+iostream
+-
+NumberList.h
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/NumberList.h
+
