@@ -9,17 +9,17 @@
 
 class Student {
     std::string name;
-    int nota1, nota2, nota3;
+    float nota1, nota2, nota3;
 
 
 public:
-    Student(const std::string& name, int nota1, int nota2, int nota3);
+    Student(const std::string& name, float nota1, float nota2, float nota3);
     Student();
     std::string getName();
 
-    int getNotaEng();
-    int getNotaMath();
-    int getNotaHistory();
+    float getNotaEng();
+    float getNotaMath();
+    float getNotaHistory();
 
     float average() const;
 

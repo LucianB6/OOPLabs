@@ -5,7 +5,7 @@
 #include "Student.h"
 #include <string>
 
-Student::Student(const std::string& name, int nota1, int nota2, int nota3) {
+Student::Student(const std::string& name, float nota1, float nota2, float nota3) {
     this->name = name;
     this->nota1 = nota1;
     this->nota2 = nota2;
@@ -16,15 +16,15 @@ std::string Student::getName() {
     return name;
 }
 
-int Student::getNotaEng() {
+float Student::getNotaEng() {
     return nota1;
 }
 
-int Student::getNotaHistory() {
+float Student::getNotaHistory() {
     return nota3;
 }
 
-int Student::getNotaMath() {
+float Student::getNotaMath() {
     return nota2;
 }
 
