@@ -46,11 +46,15 @@ char *Math::Add(const char * a, const char * b) {
     int len_a = strlen(a);
     int len_b = strlen(b);
 
-    char *result = new char[len_a + len_b + 1];
-    strcpy(result, a);
-    strcat(result, b);
+    if(len_a == 0 or len_b == 0){
+        return nullptr;
+    } else {
+        char *result = new char[len_a + len_b + 1];
+        strcpy(result, a);
+        strcat(result, b);
 
-    return result;
+        return result;
+    }
 }
 
 Math::Math() {
