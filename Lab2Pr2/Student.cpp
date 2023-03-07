@@ -4,9 +4,10 @@
 
 #include "Student.h"
 #include <string>
+#include <cstring>
 
-Student::Student(const std::string& name, float nota1, float nota2, float nota3) {
-    this->name = name;
+Student::Student(const char *name, float nota1, float nota2, float nota3) {
+    this->name = (const char *) name;
     this->nota1 = nota1;
     this->nota2 = nota2;
     this->nota3 = nota3;
@@ -35,7 +36,7 @@ float Student::average() const {
     return avg;
 }
 
-int Student::compareStudent(const Student& s1, const Student& s2) {
+int Student::compareStudentbyAvg(const Student& s1, const Student& s2) {
     if (s1.average() > s2.average()){
         return 1;
     }
@@ -46,5 +47,41 @@ int Student::compareStudent(const Student& s1, const Student& s2) {
 
 Student::Student() {
 
+}
+
+int Student::compareStudentbyE(const Student &s1, const Student &s2) {
+    if (s1.nota1 > s2.nota1){
+        return 1;
+    }
+    else if (s1.nota1 == s2.nota1){
+        return 0;
+    } else return -1;
+}
+
+int Student::compareStudentbyH(const Student &s1, const Student &s2) {
+    if (s1.nota2 > s2.nota2){
+        return 1;
+    }
+    else if (s1.nota2 == s2.nota2){
+        return 0;
+    } else return -1;
+}
+
+int Student::compareStudentbyM(const Student &s1, const Student &s2) {
+    if (s1.nota3 > s2.nota3){
+        return 1;
+    }
+    else if (s1.nota3 == s2.nota3){
+        return 0;
+    } else return -1;
+}
+
+int Student::compareStudentbyName(const Student& s1, const Student &s2) {
+    if (strcmp(s1.name, s2.name) != 0){
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }
 

@@ -8,12 +8,12 @@
 #include <string>
 
 class Student {
-    std::string name;
+    const char *name;
     float nota1, nota2, nota3;
 
 
 public:
-    Student(const std::string& name, float nota1, float nota2, float nota3);
+    Student(const char *name, float nota1, float nota2, float nota3);
     Student();
     std::string getName();
 
@@ -23,7 +23,12 @@ public:
 
     float average() const;
 
-    int compareStudent(const Student& s1, const Student& s2);
+    int compareStudentbyAvg(const Student& s1, const Student& s2);
+    int compareStudentbyE(const Student& s1, const Student& s2);
+    int compareStudentbyH(const Student& s1, const Student& s2);
+    int compareStudentbyM(const Student& s1, const Student& s2);
+    int compareStudentbyName(const Student& s1, const Student& s2);
+
 };
 
 

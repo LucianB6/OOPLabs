@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2Pr2/Student.cpp
-Student.h
 C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2Pr2/Student.h
 string
 -
 
-C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2Pr2/Student.h
-string
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2Pr2/main.cpp
+iostream
 -
+Student.h
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2Pr2/Student.h
 
