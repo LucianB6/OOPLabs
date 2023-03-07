@@ -80,13 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/NumberList.cpp">
+		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/Problema1/NumberList.cpp">
 			<Option target="Lab2"/>
 		</Unit>
-		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/NumberList.h">
+		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/Problema1/NumberList.h">
 			<Option target="Lab2"/>
 		</Unit>
-		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/main.cpp">
+		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/Problema1/main.cpp">
 			<Option target="Lab2"/>
 		</Unit>
 		<Unit filename="C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab2/CMakeLists.txt">

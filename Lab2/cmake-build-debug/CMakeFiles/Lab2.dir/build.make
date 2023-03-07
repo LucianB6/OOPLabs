@@ -76,42 +76,42 @@ include CMakeFiles/Lab2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Lab2.dir/flags.make
 
-CMakeFiles/Lab2.dir/main.cpp.obj: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab2.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\main.cpp.obj -c "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\main.cpp"
+CMakeFiles/Lab2.dir/Problema1/main.cpp.obj: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/Problema1/main.cpp.obj: ../Problema1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab2.dir/Problema1/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Problema1\main.cpp.obj -c "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\Problema1\main.cpp"
 
-CMakeFiles/Lab2.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\main.cpp" > CMakeFiles\Lab2.dir\main.cpp.i
+CMakeFiles/Lab2.dir/Problema1/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Problema1/main.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\Problema1\main.cpp" > CMakeFiles\Lab2.dir\Problema1\main.cpp.i
 
-CMakeFiles/Lab2.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\main.cpp" -o CMakeFiles\Lab2.dir\main.cpp.s
+CMakeFiles/Lab2.dir/Problema1/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Problema1/main.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\Problema1\main.cpp" -o CMakeFiles\Lab2.dir\Problema1\main.cpp.s
 
-CMakeFiles/Lab2.dir/NumberList.cpp.obj: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/NumberList.cpp.obj: ../NumberList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab2.dir/NumberList.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\NumberList.cpp.obj -c "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\NumberList.cpp"
+CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.obj: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.obj: ../Problema1/NumberList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Problema1\NumberList.cpp.obj -c "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\Problema1\NumberList.cpp"
 
-CMakeFiles/Lab2.dir/NumberList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/NumberList.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\NumberList.cpp" > CMakeFiles\Lab2.dir\NumberList.cpp.i
+CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\Problema1\NumberList.cpp" > CMakeFiles\Lab2.dir\Problema1\NumberList.cpp.i
 
-CMakeFiles/Lab2.dir/NumberList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/NumberList.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\NumberList.cpp" -o CMakeFiles\Lab2.dir\NumberList.cpp.s
+CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Lucian\OneDrive\Desktop\FIAnul3\Semestrul2\OOP labs\OOPLabs\Lab2\Problema1\NumberList.cpp" -o CMakeFiles\Lab2.dir\Problema1\NumberList.cpp.s
 
 # Object files for target Lab2
 Lab2_OBJECTS = \
-"CMakeFiles/Lab2.dir/main.cpp.obj" \
-"CMakeFiles/Lab2.dir/NumberList.cpp.obj"
+"CMakeFiles/Lab2.dir/Problema1/main.cpp.obj" \
+"CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.obj"
 
 # External object files for target Lab2
 Lab2_EXTERNAL_OBJECTS =
 
-Lab2.exe: CMakeFiles/Lab2.dir/main.cpp.obj
-Lab2.exe: CMakeFiles/Lab2.dir/NumberList.cpp.obj
+Lab2.exe: CMakeFiles/Lab2.dir/Problema1/main.cpp.obj
+Lab2.exe: CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/build.make
 Lab2.exe: CMakeFiles/Lab2.dir/linklibs.rsp
 Lab2.exe: CMakeFiles/Lab2.dir/objects1.rsp

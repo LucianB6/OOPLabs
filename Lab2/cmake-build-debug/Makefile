@@ -142,59 +142,59 @@ Lab2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/build
 .PHONY : Lab2/fast
 
-NumberList.obj: NumberList.cpp.obj
+Problema1/NumberList.obj: Problema1/NumberList.cpp.obj
 
-.PHONY : NumberList.obj
-
-# target to build an object file
-NumberList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/NumberList.cpp.obj
-.PHONY : NumberList.cpp.obj
-
-NumberList.i: NumberList.cpp.i
-
-.PHONY : NumberList.i
-
-# target to preprocess a source file
-NumberList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/NumberList.cpp.i
-.PHONY : NumberList.cpp.i
-
-NumberList.s: NumberList.cpp.s
-
-.PHONY : NumberList.s
-
-# target to generate assembly for a file
-NumberList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/NumberList.cpp.s
-.PHONY : NumberList.cpp.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
+.PHONY : Problema1/NumberList.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Problema1/NumberList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.obj
+.PHONY : Problema1/NumberList.cpp.obj
 
-main.i: main.cpp.i
+Problema1/NumberList.i: Problema1/NumberList.cpp.i
 
-.PHONY : main.i
+.PHONY : Problema1/NumberList.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/main.cpp.i
-.PHONY : main.cpp.i
+Problema1/NumberList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.i
+.PHONY : Problema1/NumberList.cpp.i
 
-main.s: main.cpp.s
+Problema1/NumberList.s: Problema1/NumberList.cpp.s
 
-.PHONY : main.s
+.PHONY : Problema1/NumberList.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/main.cpp.s
-.PHONY : main.cpp.s
+Problema1/NumberList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Problema1/NumberList.cpp.s
+.PHONY : Problema1/NumberList.cpp.s
+
+Problema1/main.obj: Problema1/main.cpp.obj
+
+.PHONY : Problema1/main.obj
+
+# target to build an object file
+Problema1/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Problema1/main.cpp.obj
+.PHONY : Problema1/main.cpp.obj
+
+Problema1/main.i: Problema1/main.cpp.i
+
+.PHONY : Problema1/main.i
+
+# target to preprocess a source file
+Problema1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Problema1/main.cpp.i
+.PHONY : Problema1/main.cpp.i
+
+Problema1/main.s: Problema1/main.cpp.s
+
+.PHONY : Problema1/main.s
+
+# target to generate assembly for a file
+Problema1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Problema1/main.cpp.s
+.PHONY : Problema1/main.cpp.s
 
 # Help Target
 help:
@@ -205,12 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab2
-	@echo ... NumberList.obj
-	@echo ... NumberList.i
-	@echo ... NumberList.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Problema1/NumberList.obj
+	@echo ... Problema1/NumberList.i
+	@echo ... Problema1/NumberList.s
+	@echo ... Problema1/main.obj
+	@echo ... Problema1/main.i
+	@echo ... Problema1/main.s
 .PHONY : help
 
 
