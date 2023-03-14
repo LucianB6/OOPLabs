@@ -21,4 +21,12 @@ Sort.h
 C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab4/Sort.h
 initializer_list
 -
+cstdio
+-
+cstring
+-
+cstdarg
+-
+vector
+-
 

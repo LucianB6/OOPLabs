@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <cstring>
 #include <cstdarg>
+#include <vector>
 
 
 int size(std::initializer_list<int> list) {
@@ -20,6 +21,9 @@ int main() {
     int max = 12;
     int length = 7;
     int list[length];
+    char lista_string[] = "10,23,321,11,42";
+
+    std::vector<int> vector_list = {1, 5, 2, 4, 9};
 
     int initialized_list[] = {2, 3, 4, 1, 5, 10, 7};
 
@@ -41,7 +45,17 @@ int main() {
     sort_random.InsertSort(true);
     sort_random.Print();
 
-    Sort variadic(lungime, {2, 3, 1, 5, 6});
+    Sort variadic(lungime, 4, 2, 3, 8, 10, 2);
+    variadic.InsertSort(true);
+    variadic.Print();
+
+    Sort vector(vector_list, vector_list.size());
+    vector.InsertSort(true);
+    vector.Print();
+
+    Sort char_list(lista_string, 5);
+    char_list.QuickSort(true, 0, 4);
+    char_list.Print();
 
 
 

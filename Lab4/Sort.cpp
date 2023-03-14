@@ -2,7 +2,7 @@
 // Created by Lucian on 3/13/2023.
 //
 #include <bits/stdc++.h>
-
+#include <string>
 #include "Sort.h"
 
 Sort::Sort(std::initializer_list<int> list, int length) {
@@ -34,12 +34,45 @@ void Sort::InsertSort(bool ascendent) {
     }
 }
 
-void Sort::QuickSort(bool ascendent) {
+int partition(int arr[], int low, int high, int pivot){
+    int PIndex = low;
+
+    for(int i=low;i<=high;i++) {
+
+        if(arr[i]<=pivot) {
+            std::swap(arr[PIndex],arr[i]);
+            PIndex++;
+        }
+    }
+    PIndex--;
+
+    return PIndex;
+}
+
+void Sort::QuickSort(bool ascendent, int i, int j) {
+
+    if(i < j) {
+        int pivot = this->unsorted_list[j];
+
+        int PIndex = partition(this->unsorted_list, i, j, pivot);
+
+        QuickSort(this->unsorted_list, i, PIndex - 1);
+        QuickSort(this->unsorted_list, PIndex + 1, j);
+    }
 
 }
 
-void Sort::BubbleSort(bool ascendent) {
 
+void Sort::BubbleSort(bool ascendent) {
+    int i, j;
+    int size = GetElementsCount();
+    for (i = 0; i < size - 1; i++)
+
+        // Last i elements are already
+        // in place
+        for (j = 0; j < size - i - 1; j++)
+            if (this->unsorted_list[j] > this->unsorted_list[j + 1])
+                std::swap(this->unsorted_list[j], this->unsorted_list[j + 1]);
 }
 
 void Sort::Print() {
@@ -50,16 +83,6 @@ void Sort::Print() {
 }
 
 int Sort::GetElementsCount() {
-//    int count = 0;
-//    for (int i = 0; ; ++i) {
-//        count += 1;
-//        if (this->unsorted_list[i] != NULL){
-//            break;
-//        }
-//    }
-//
-//    return count - 1;
-
     return this->length;
 }
 
@@ -84,6 +107,7 @@ Sort::Sort(int length, int min, int max) {
 
 Sort::~Sort() {
     delete[] unsorted_list;
+    length = 0;
 }
 
 Sort::Sort(int count, ...) {
@@ -97,4 +121,28 @@ Sort::Sort(int count, ...) {
     for (int i = 0; i < this->length; ++i) {
         this->unsorted_list[i] = va_arg(vaList, int);
     }
+}
+
+Sort::Sort(std::vector<int> vector, int length) {
+    this->length = length;
+    this->unsorted_list = new int[this->length];
+
+    for (int i = 0; i < this->length; i++)
+        this->unsorted_list[i] = vector[i];
+}
+
+Sort::Sort(char * list_string, int length) {
+    this->string_list = list_string;
+    this->length = length;
+    int new_list[this->length];
+    char *ptr;
+
+    ptr = strtok(list_string, ",");
+    int i = 0;
+    while (ptr != NULL){
+        this->unsorted_list[i] = atoi(ptr);
+        ptr = strtok (NULL, " , ");
+        i += 1;
+    }
+
 }
