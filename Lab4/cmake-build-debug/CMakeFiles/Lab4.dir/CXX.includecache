@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab4/Sort.cpp
-bits/stdc++.h
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab4/Sort.h
+vector
+-
+initializer_list
+-
+
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab4/main.cpp
+iostream
+-
+cstdlib
 -
 Sort.h
 C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab4/Sort.h
-
-C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab4/Sort.h
-vector
+initializer_list
 -
 
