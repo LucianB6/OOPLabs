@@ -37,15 +37,22 @@ void Circuit::Race() {
 }
 
 void Circuit::ShowFinalRanks() {
+    std::cout << "In aceasta cursa au finalizat " << participantiCareAuFinalizat << " participanti. Locurile sunt:\n";
 
-        std::cout << "In aceasta cursa au finalizat " << participantiCareAuFinalizat << " participanti. Locurile sunt:\n";
+    Car** pilotiCareAuFinalizatNou = new Car*[participantiCareAuFinalizat];
 
-        for (int i = 0; i < participantiCareAuFinalizat; i++) {
-            std::cout << pilotiCareAuFinalizat[i]->getCarName() << " finalizand pe locul: " << i + 1 << std::endl;
-        }
-        std::cout<<std::endl;
+    for (int i = 0; i < participantiCareAuFinalizat; i++) {
+        pilotiCareAuFinalizatNou[i] = pilotiCareAuFinalizat[i];
     }
 
+    for (int i = 0; i < participantiCareAuFinalizat; i++) {
+        std::cout << pilotiCareAuFinalizatNou[i]->getCarName() << " finalizand pe locul: " << i + 1 << std::endl;
+    }
+
+    delete[] pilotiCareAuFinalizatNou;
+
+    std::cout << std::endl;
+}
 
 void Circuit::ShowWhoDidNotFinish() {
     std::cout << "In aceasta cursa " << participantiCareAuPierdut << " n-au finalizat cursa. Masinile sunt:\n";
@@ -54,12 +61,41 @@ void Circuit::ShowWhoDidNotFinish() {
         std::cout << pilotiCareAuPierdut[i]->getCarName() << std::endl;
     }
     std::cout<<std::endl;
+
+    if (participantiCareAuPierdut > 0) {
+        Car** temp = new Car*[participantiCareAuPierdut];
+        for (int i = 0; i < participantiCareAuPierdut; i++) {
+            temp[i] = pilotiCareAuPierdut[i];
+        }
+        delete[] pilotiCareAuPierdut;
+        pilotiCareAuPierdut = temp;
+    }
 }
+
 
 void Circuit::AddCar(Car *car) {
 
+    if (participantiInscrisi == participantiMax) {
+        Car** newList = new Car*[participantiMax * 2];
+        std::memcpy(newList, pilotiInitiali, participantiMax * sizeof(Car*));
+        delete [] pilotiInitiali;
+        pilotiInitiali = newList;
+
+        Car** newFinishList = new Car*[participantiMax * 2];
+        std::memcpy(newFinishList, pilotiCareAuFinalizat, participantiMax * sizeof(Car*));
+        delete [] pilotiCareAuFinalizat;
+        pilotiCareAuFinalizat = newFinishList;
+
+        Car** newLoseList = new Car*[participantiMax * 2];
+        std::memcpy(newLoseList, pilotiCareAuPierdut, participantiMax * sizeof(Car*));
+        delete [] pilotiCareAuPierdut;
+        pilotiCareAuPierdut = newLoseList;
+
+        participantiMax *= 2;
+    }
+
     pilotiInitiali[participantiInscrisi] = car;
-    participantiInscrisi ++;
+    participantiInscrisi++;
 
 }
 
