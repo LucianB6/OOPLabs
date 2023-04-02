@@ -9,9 +9,15 @@
 #include "Car.h"
 
 class Circuit {
-    int nrParticipanti;
-    Car** racer;
+    int participantiInscrisi = 0;
+    int participantiCareAuPierdut = 0;
+    int participantiCareAuFinalizat = 0;
+    Car** pilotiInitiali;
+    Car** pilotiCareAuFinalizat = nullptr;
+    Car** pilotiCareAuPierdut;
     int lungime;
+    Weather vremeActuala;
+    int participantiMax;
 
 public:
     Circuit();

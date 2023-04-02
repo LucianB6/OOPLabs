@@ -5,15 +5,15 @@
 #include "RangeRover.h"
 
 
-double RangeRover::fuelCapacity() {
+double RangeRover::fuelCapacity() const{
     return 60;
 }
 
-double RangeRover::fuelConsumption() {
+double RangeRover::fuelConsumption() const{
     return 4.3;
 }
 
-int RangeRover::averageSpeed(Weather weather) {
+int RangeRover::averageSpeed(Weather weather) const{
     if (weather == Rain){
         return 140;
     }
@@ -25,6 +25,6 @@ int RangeRover::averageSpeed(Weather weather) {
     }
 }
 
-const char* RangeRover::getCarName() {
+const char* RangeRover::getCarName() const{
     return "RangeRover";
 }

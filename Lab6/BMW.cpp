@@ -4,15 +4,15 @@
 
 #include "BMW.h"
 
-double BMW::fuelCapacity() {
+double BMW::fuelCapacity() const{
     return 70;
 }
 
-double BMW::fuelConsumption() {
+double BMW::fuelConsumption() const{
     return 8.2;
 }
 
-int BMW::averageSpeed(Weather weather) {
+int BMW::averageSpeed(Weather weather) const{
     if (weather == Rain){
         return 130;
     }
@@ -24,6 +24,6 @@ int BMW::averageSpeed(Weather weather) {
     }
 }
 
-const char* BMW::getCarName() {
+const char* BMW::getCarName() const{
     return "BMW";
 }

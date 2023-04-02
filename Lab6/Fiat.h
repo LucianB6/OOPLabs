@@ -10,10 +10,10 @@
 class Fiat: public Car{
 
 public:
-    double fuelCapacity() override = 0;
-    double fuelConsumption() override = 0;
-    int averageSpeed(Weather weather) override = 0;
-    const char* getCarName() override = 0;
+    double fuelCapacity() const override;
+    double fuelConsumption() const override;
+    int averageSpeed(Weather weather) const override;
+    const char* getCarName() const override;
 };
 
 

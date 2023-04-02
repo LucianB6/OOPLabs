@@ -4,15 +4,15 @@
 
 #include "Volvo.h"
 
-double Volvo::fuelCapacity() {
+double Volvo::fuelCapacity() const {
     return 40;
 }
 
-double Volvo::fuelConsumption() {
+double Volvo::fuelConsumption() const{
     return 6.2;
 }
 
-int Volvo::averageSpeed(Weather weather) {
+int Volvo::averageSpeed(Weather weather) const{
     if (weather == Rain){
         return 160;
     }
@@ -24,6 +24,6 @@ int Volvo::averageSpeed(Weather weather) {
     }
 }
 
-const char* Volvo::getCarName() {
+const char* Volvo::getCarName() const{
     return "Volvo";
 }

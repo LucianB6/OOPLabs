@@ -9,10 +9,10 @@
 //fuel capacity, fuel consumption, average speed on different conditions (Rain, Sunny, Snow
 class Car {
 public:
-    virtual double fuelCapacity() = 0;
-    virtual double fuelConsumption() = 0;
-    virtual int averageSpeed(Weather weather) = 0;
-    virtual const char* getCarName() = 0;
+    virtual double fuelCapacity() const = 0;
+    virtual double fuelConsumption() const = 0;
+    virtual int averageSpeed(Weather weather) const = 0;
+    virtual const char* getCarName() const = 0;
 
 };
 

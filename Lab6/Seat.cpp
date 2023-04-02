@@ -4,15 +4,15 @@
 
 #include "Seat.h"
 
-double Seat::fuelCapacity() {
+double Seat::fuelCapacity() const{
     return 60;
 }
 
-double Seat::fuelConsumption() {
+double Seat::fuelConsumption() const{
     return 4.3;
 }
 
-int Seat::averageSpeed(Weather weather) {
+int Seat::averageSpeed(Weather weather) const{
     if (weather == Rain){
         return 140;
     }
@@ -24,6 +24,6 @@ int Seat::averageSpeed(Weather weather) {
     }
 }
 
-const char* Seat::getCarName() {
+const char* Seat::getCarName() const{
     return "Seat";
 }
