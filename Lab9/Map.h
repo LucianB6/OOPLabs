@@ -27,6 +27,8 @@ public:
     int Count();
     void Clear();
     bool Delete(const K& key);
+    bool Includes(const Map<K,V>& map) const;
+
 
     class Iterator {
         friend class Map;

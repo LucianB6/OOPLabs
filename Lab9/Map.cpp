@@ -63,4 +63,21 @@ bool Map<K, V>::Delete(const K &key) {
     return false;
 }
 
+template<typename K, typename V>
+bool Map<K, V>::Includes(const Map<K, V> &map) const {
+    for (int i = 0; i < map.length; i++) {
+        bool found = false;
+        for (int j = 0; j < length; j++) {
+            if (map.key_[i] == key_[j]) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
