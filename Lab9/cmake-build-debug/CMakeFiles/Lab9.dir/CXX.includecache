@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab9/Map.cpp
+tuple
+-
+Map.h
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab9/Map.h
+bits/stdc++.h
+-
+
+C:/Users/Lucian/OneDrive/Desktop/FIAnul3/Semestrul2/OOP labs/OOPLabs/Lab9/Map.h
+bits/stdc++.h
+-
+
